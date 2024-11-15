@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px; /* taban olarak 10px alınır ve rem ile devam edilir*/
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background: #fff;
+  color: #000000;
+  text-align: center;
+  line-height: 1.6;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none; /*mobilde degismeli ve yan sblokta olmalı*/
+}
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* navbar */
+.navbar {
+  z-index: 10;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.7;*/
+  color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 3rem;
+}
+.navbar a {
+  color: #000000;
+  padding: 1rem 2rem;
+  margin: 0 0.5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #c5a930;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .nisan {
+  font-weight: 400;
+}
+
+.navbar h1 {
+  font-size: 3rem;
+}
+
+.navbar span {
+  color: #c5a930;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  background-color: #ffffff;
+}
+.home {
+  background-color: #ffffff;
+  /* background-image: url("../img/mavi-gri.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
+
+  /*background-color: #333;*/
+  height: 100vh;
+  /* padding-top: 7rem; */
+  /* position: relative; */
+}
+.home > .giris_sayfasi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  color: #000000;
+  padding-top: 5rem;
+}
+.animate__animated.animate__flash {
+  --animate-duration: 3s; /* animasyonu  süresi */
+  animation-iteration-count: infinite; /* animasyonu sonsuz tekrar ettiriyoruz */
+}
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 3s;
+}
+.job {
+  font-size: 3.5rem;
+  padding-top: 20rem;
+}
+.giris_sayfasi h2 {
+  color: #000000;
+  padding-top: 2rem;
+}
+
+#saat {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffdd47;
+}
+#iletisim {
+  text-align: center;
+  background-color: #ffffff;
+  /* background-image: url(../img/mavi-gri.png); */
+  height: 100vh;
+  padding-top: 17rem;
+  color: #ffdd47;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+label {
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+input,
+textarea,
+button {
+  background-color: #282727;
+  border: 2px solid #000000;
+  color: #ffdd47;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+#Gonder {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  margin: 5px;
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #ffdd47;
+  }
+}
+
+.about {
+  background-color: #ffffff;
+  height: 100vh;
+}
+/*.hakkinda {
+  height: 70vh;
+}
+#about-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.hakkinda img {
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+  transform: translate(-50%, -50%);
+}
+
+.hakkinda p {
+  
+}*/
+/* hakkinda bolumu*/
+.hakkinda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.hakkinda img {
+  border-radius: 50%; /* Daire şekli verir */
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px rgba(105, 101, 101, 0.5);
+}
+
+.hakkinda p {
+  font-size: 2rem;
+  color: #000000;
+  max-width: 50%; /* Metni sınırlı genişlikte tutar */
+  text-shadow: #9a8216;
+}
+
+/*project kısmı*/
+.filters {
+  margin: 1rem 0;
+  padding-top: 10rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+}
+
+.project {
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.caption p,
+h2 {
+  color: #c5a930;
+  text-align: center;
+  padding: 10px 20px;
+}
+button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  color: #ff0000;
+}
+/* Mobil için */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    height: 3rem;
+  }
+  .navbar h1 {
+    font-size: 2.5rem;
+  }
+
+  .navbar a {
+    padding: 1rem;
+  }
+
+  /* Giriş sayfası */
+  .home > .giris_sayfasi {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+  }
+  .job {
+    font-size: 2.8rem;
+    padding-top: 10rem;
+  }
+
+  /* Hakkında Bölümü */
+  .hakkinda {
+    padding-top: 15rem;
+  }
+  .hakkinda img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .hakkinda p {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+  /* İletişim Formu */
+  form {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  /* Projeler Bölümü */
+  .projects {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .projects-page {
+    padding-top: 5rem;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .filters {
+    padding-top: 5rem;
+    text-align: center;
+  }
+
+  h2,
+  .caption p {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+  }
+  button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+  }
+}

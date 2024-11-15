@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamus | Kişisel Portföy ve Projeler/proje</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="nisan">
+          <i class="fas fa-user-circle"></i>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a href="project.html">Projeler</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="projects-page">
+      <div class="filters">
+        <button onclick="filterProjects('devamEden')">
+          Devam eden Projeler
+        </button>
+        <button onclick="filterProjects('bitmis')">Bitmiş Projeler</button>
+        <button onclick="filterProjects('hepsi')">Tüm Projeler</button>
+      </div>
+      <section class="projects">
+        <div class="project proje1" data-category="bitmis hepsi">
+          <h2>Matematik oyunu</h2>
+          <img
+            src="img/project1.png"
+            alt="Proje 1 Resmi"
+            width="135"
+            height="135"
+          />
+          <div class="caption">
+            <p>
+              Bu proje, matematiği eğlenceli ve öğretici bir şekilde öğrenmek
+              için tasarlanmış interaktif bir oyun platformudur. Oyunculara
+              farklı zorluk seviyelerinde problem çözme, mantık yürütme ve hız
+              gerektiren görevler sunar.
+            </p>
+          </div>
+        </div>
+        <div class="project proje2" data-category="devamEden hepsi">
+          <h2>Trade Robotu</h2>
+          <img
+            src="img/project2.png"
+            alt="Proje 2 Resmi"
+            width="135"
+            height="135"
+          />
+          <div class="caption">
+            <p>
+              Türk hisse senedi piyasasına özgü metrikler ve Google arama
+              trendleri gibi yenilikçi veriler kullanarak yatırım kararlarını
+              destekleyen bir al-sat robotu geliştirmeyi hedefler.
+            </p>
+          </div>
+        </div>
+        <div class="project proje3" data-category="bitmis hepsi">
+          <h2>Web Sitesi</h2>
+          <img
+            src="img/project3.png"
+            alt="Proje 3 Resmi"
+            width="135"
+            height="135"
+          />
+          <div class="caption">
+            <p>
+              Bu proje, kişisel ve profesyonel çalışmalarınızı sergilemek için
+              modern bir platform oluşturmayı amaçlıyor. Ziyaretçilere
+              projelerimizi, yeteneklerimizi ve ilgi alanlarımızı etkileyici bir
+              tasarımla sunarken, kullanıcı dostu bir deneyim sağlamayı
+              hedefliyor.
+            </p>
+          </div>
+        </div>
+        <script src="java-code.js"></script>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="social footer">
+      <a href="https://www.github.com/bayramkamus" target="_blank"
+        ><i class="btn btn-github fab fa-github fa-2x"></i
+      ></a>
+
+      <a
+        href="https://www.linkedin.com/in/bayram-kamus-23b1ba239/"
+        target="_blank"
+        ><i class="btn btn-linkedn fab fa-linkedin fa-2x"></i
+      ></a>
+    </div>
+  </footer>
+</html>

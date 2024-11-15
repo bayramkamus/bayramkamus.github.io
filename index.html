@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Kamus | Kişisel Portföy ve Projeler</title>
+  </head>
+  <body>
+    <header class="home">
+      <div class="navbar">
+        <h1 class="nisan">
+          <i class="fas fa-user-circle"></i>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a href="project.html">Projeler</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="giris_sayfasi">
+        <div id="saat"><script src="java-code.js"></script></div>
+        <h1>HOŞGELDİNİZ</h1>
+        <p class="job animate__animated animate__bounceInLeft">
+          Yazılım alanındaki projelerimi keşfedin. İletişim Kurmak İster
+          Misiniz?
+        </p>
+        <h2>İletişim</h2>
+        <p>
+          <a href="#iletisim" class="btn btn-laptop">
+            <i class="fas fa-laptop animate__animated animate__flash"></i>
+          </a>
+        </p>
+      </section>
+    </header>
+    <main>
+      <section id="iletisim">
+        <h2>İletişim Formu</h2>
+        <form id="iletisimFormu" onsubmit="return formuDogrula()">
+          <label for="isim">İsim:</label>
+          <input type="text" id="isim" name="isim" />
+
+          <label for="email">E-posta:</label>
+          <input type="text" id="email" name="email" />
+
+          <label for="mesaj">Mesaj:</label>
+          <textarea id="mesaj" name="mesaj"></textarea>
+
+          <button id="Gonder" type="submit">Gönder</button>
+          <p id="hataMesaji" style="color: red"></p>
+        </form>
+
+        <script src="java-code.js"></script>
+      </section>
+    </main>
+    <footer>
+      <div class="social footer">
+        <a href="https://www.github.com/bayramkamus" target="_blank"
+          ><i class="btn btn-github fab fa-github fa-2x"></i
+        ></a>
+
+        <a
+          href="https://www.linkedin.com/in/bayram-kamus-23b1ba239/"
+          target="_blank"
+          ><i class="btn btn-linkedn fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.btn {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn-laptop {
+  transition: transform 1s ease-in-out;
+  display: inline-block;
+  background-color: #c3c3c3;
+}
+.btn-youtube {
+  background-color: #ffff;
+  color: #ff0000;
+}
+.btn-linkedn {
+  background-color: #ffff;
+  color: #0e76a8;
+}
+.btn-github {
+  background-color: #ffff;
+  color: #000000;
+}
