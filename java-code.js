@@ -14,18 +14,13 @@ window.onscroll = function () {
 
 /*saat kısmı*/
 
-function saatiGuncelle() {
-  const saatElementi = document.getElementById("saat");
-  const simdi = new Date();
-  const saat = simdi.getHours().toString().padStart(2, "0");
-  const dakika = simdi.getMinutes().toString().padStart(2, "0");
-  const saniye = simdi.getSeconds().toString().padStart(2, "0");
-  saatElementi.textContent = `${saat}:${dakika}:${saniye}`;
+function myTimer() {
+  const d = new Date();
+  document.getElementById("saat").innerHTML = d.toLocaleTimeString();
 }
+let myVar = setInterval(myTimer, 1000);
+myTimer();
 
-setInterval(saatiGuncelle, 1000);
-
-saatiGuncelle();
 
 /*form kısmı*/
 function formuDogrula() {
